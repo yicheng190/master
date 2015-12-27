@@ -1,0 +1,14 @@
+1、	git官网下载windows版，默认安装
+2、	git config --global user.name "Your Name"
+	git config --global user.email "yicheng190@hotmail.com"
+
+3、	创建工作目录，mkdir、pwd
+4、	在工作目录下
+	git init 初始化目录
+5、	添加和更新文件
+	git add <file>
+	git commit -m <discription>
+6、	查看当前库状态
+	git status
+7、	查看库变化
+    git diff
