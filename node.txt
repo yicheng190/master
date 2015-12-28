@@ -12,3 +12,17 @@
 	git status
 7、	查看库文件修改内容
     git diff
+8、	查看历史记录
+	git log
+9、	版本表示
+	HEAD表示当前版本
+	HEAD^表示上一版本
+	HEAD^^表示上上版本
+	HEAD~n表示网上第n个版本
+10、	回到上一个版本
+	git reset --hard <版本号>
+	如：git reset --hard HEAD^  退回上一个版本
+		git reset --hard 33333	回到版本号为33333的版本
+11、	查询每次命令历史
+	git reflog
+
