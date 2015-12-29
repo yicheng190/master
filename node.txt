@@ -12,7 +12,7 @@
 	git status
 7、	查看库文件修改内容
     git diff
-8、	查看历史记录
+8、	查看提交历史记录
 	git log
 9、	版本表示
 	HEAD表示当前版本
@@ -20,9 +20,40 @@
 	HEAD^^表示上上版本
 	HEAD~n表示网上第n个版本
 10、	回到上一个版本
-	git reset --hard <版本号>
+	git reset --hard <commit_id>
 	如：git reset --hard HEAD^  退回上一个版本
 		git reset --hard 33333	回到版本号为33333的版本
 11、	查询每次命令历史
 	git reflog
+12、	工作区(Working Directory)
+	工作目录
+13、	版本库(Repository)
+	.git为Git版本库
+	版本苦衷最重要的是stage(或index):暂存区
+	Git自动创建的第一个分支master,以及指向master的一个指针HEAD
+14、	往Git版本库添加文件
+	第一步：git add 添加文件 把文件添加到暂存区
+	第二部：git commit 提交更改 把暂存区的所有内容提交到当前分支
+15、	删除修改
+	git checkout -- <file> 把file文件在工作区的修改全部撤销
+	其中--很重要，没有--，则变成了切换到另一个分支。
+
+16、	git reset HEAD file可以把暂存区的修改撤销掉(unstage)，重新放回工作区
+
+17、	删除文件
+	git rm <file>		用于删除一个文件
+	git checkout -- <file>恢复文件到最新版本
+
+
+远程仓库
+18 	创建SSH Key。一般SSH Key保存在用户主目录中，即一般C:\user\name\ssh
+	ssh-keygen -t rsa -C "yicheng190@hotmail.com"
+
+19	注册github账号，登录进入Setting - SSH Key  Add key
+	title随意
+	将id_rsa.pub内容拷进key点击Add
+
+20 https://github.com/yicheng190/master.git
+
+
 
