@@ -53,7 +53,32 @@
 	title随意
 	将id_rsa.pub内容拷进key点击Add
 
-20 https://github.com/yicheng190/master.git
+20 	https://github.com/yicheng190/master.git
+
+21	关联远程库，使用git remote add origin git@server-name:path/repo-name.git
+	关联后，使用命令git push -u origin master
+	此后，使用git push origin master推送最新修改
+
+22	克隆仓库到本地
+	git clone git@gitbug.com:<username>/<proname>
+	git支持多种协议，包括https，但通过ssh支持的原生git协议速度更快
+
+23	查看分支
+	git branch
+24	创建分支
+	git branch <name>
+
+25	切换分支
+	git checkout <name>
+
+26	创建+切换分支
+	git checkout -b <name>
+
+27	合并某分支到当前分支
+	git merge <name>
+
+28	删除分支
+	git branch -d <name>
 
 
 
